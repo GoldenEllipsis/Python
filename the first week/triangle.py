@@ -1,3 +1,4 @@
+# 等边三角形
 from turtle import *
 
 color('red', 'yellow')
