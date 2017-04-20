@@ -1,0 +1,22 @@
+统计字符串中单词数量
+题目内容：
+读入一个字符串，内容为英文文章，输入其中出现最多的单词（仅输入单词，不计算标点符号，同一个单词的大小写形式合并计数），统一以小写输出。
+
+输入格式:
+this is a python and Python
+
+输出格式：
+python
+
+s = input()
+s = s.lower()
+s_list = s.split()
+
+s_dict = {}
+for w in s_list:
+    if w in s_dict:
+        s_dict[w] += 1
+    else:
+        s_dict[w] = 1
+print(max(s_dict,key = lambda w:s_dict[w]))
+#print(max(s_dict.items(), key = lambda w: w[1])[0])
