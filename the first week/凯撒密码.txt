@@ -1,0 +1,46 @@
+凯撒密码实现
+题目内容：
+实现一个凯撒密码的变种算法，对输入字符串进行加解密处理
+把字母a-z分别循环对应为相距13个位置的字母n-m，即
+原文字母：a b c d e f g h i j k l m n o p q r s t u v w x y z
+对应字母：n o p q r s t u v w x y z a b c d e f g h i j k l m
+大写字母对应方式与小写字母类似，其他符号（含标点符号）不作处理
+
+输入格式:
+一个英文字符串
+
+输出格式：
+经过上述算法加密的字符串
+
+输入样例：
+The Zen of Python
+
+输出样例：
+Gur Mra bs Clguba
+
+
+# 输入字符串
+s = input()
+
+#步长
+step = 13
+
+#新字符串
+l =""
+for w in s:
+    if w>='a' and w<='z':
+        c=chr(ord(w)+int(step))
+        if c>'z':
+            c=chr(ord(w)-int(26-step))
+        l+=c
+
+    elif w>='A' and w<='Z':
+        c=chr(ord(w)+int(step)) 
+        if c>'Z':
+            c=chr(ord(w)-int(26-step))       
+        l+=c
+    else:
+        l+=w
+        
+#输出新字符串        
+print(l)
