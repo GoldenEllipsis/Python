@@ -1,0 +1,23 @@
+#输入字符串
+s = input()
+s = s.lower()
+
+#字符串分割成列表
+s_list = s.split()
+
+#统计字符串列表单词个数 单词及单词个数字典
+s_dict = {}
+for w in s_list:
+    if w in s_dict:
+        s_dict[w] += 1
+    else:
+        s_dict[w] = 1
+
+#单词及单词个数字典 组成元组列表 排序（从大到小）        
+items = list(s_dict.items())
+items.sort(key=lambda w:w[1],reverse=True)
+
+#单词及单词个数列表中每项分别赋值给word count并输出
+for i in range(len(items)):
+    word,count=items[i]
+    print("{}--{}".format(word,count))
