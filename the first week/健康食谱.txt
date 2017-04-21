@@ -13,8 +13,16 @@
 食材3食材1
 食材3食材2
 
+# 1
 s = input().split(", ")
 for x in range(0,len(s)):
     for y in range(0,len(s)):
         if x!=y:
             print("{}{}".format(s[x],s[y]))
+
+# 2
+s = input().split(", ")
+for x in s:
+    for y in s:
+        if x!=y:
+            print(x+y)
