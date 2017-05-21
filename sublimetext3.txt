@@ -1,0 +1,32 @@
+下载地址：http://www.sublimetext.com/3
+1、安装完之后，tools菜单下最下一个点一下，安装Package Control 插件
+2、Preferences菜单下，点Package Control 点 install Package
+3、安装插件  SublimeREPL 、 SublimeCodeIntel  、  AutoPep8 、ConvertToUTF8
+4、python环境变量path
+ file--set file encoding to--utf-8
+---------------------------------
+
+代码全选之后可以看到：空格还是tab
+   空格是....
+   tab是----
+--------------------------------
+
+调用插件： SublimeREPL
+tool  --  SublimeREPL  --  python  --  python
+
+------------------------------------------
+
+按F5直接运行SublimeREPL:Python
+ 
+preferences->Key Binding-User，写入以下内容
+ 
+[
+  { "keys": ["f5"], "caption": "SublimeREPL:Python",
+  "command": "run_existing_window_command", "args":
+    {
+    "id": "repl_python_run",
+    "file": "config/Python/Main.sublime-menu"
+    }
+  },
+]
+-----------------------------------------------
