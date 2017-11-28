@@ -1,0 +1,28 @@
+---------------------------------------
+#最小开发框架代码
+# Unit PYG02: Pygame Hello World Game
+import pygame, sys
+
+pygame.init()
+screen = pygame.display.set_mode((600, 400))
+pygame.display.set_caption("Pygame游戏之旅")
+
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            sys.exit()
+    pygame.display.update()
+    
+----------------------------------------
+1.极简开发框架
+
+  1)引入及初始化
+  2)事件及刷新
+
+2.最小开发框架
+
+  1)引入pygame和sys
+  2)初始化init()及设置
+
+  3)获取事件并逐类响应
+  4)刷新屏幕
