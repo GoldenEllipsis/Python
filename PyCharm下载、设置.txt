@@ -1,0 +1,12 @@
+-----------------------------------------
+1.Download PyCharm:
+
+https://www.jetbrains.com/pycharm/download/?fromIDE=#section=windows
+
+Community--Download
+
+-----------------------------------------
+2.Pycharm Settings:
+
+file--Settings--Color Scheme--Monokai
+file--Settings--Font--Size--26
