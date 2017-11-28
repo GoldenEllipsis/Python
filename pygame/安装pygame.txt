@@ -1,0 +1,3 @@
+install pygame:
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pygame
+pip install pygame
